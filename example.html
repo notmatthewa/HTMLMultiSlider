@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Picker Example</title>
+    <script src="js/MultiSlider.js"></script>
+    <link rel="stylesheet" href="css/MultiSlider.css">
+</head>
+<body>
+    <h1>A Time Range Selector</h1>
+    <div id="test"></div>
+    <script>
+        let times = ['12am', '2am', '4am', '6am', '8am','10am', '12pm', '2pm', '4pm', '6pm', '8pm', '10pm', '12am'];
+        let all_times = ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm', '12am'];
+        
+        let slider_test = new MultiSlider('#test', 1, 25, 10, 15, times, 1, all_times);
+    </script>
+</body>
+</html>
