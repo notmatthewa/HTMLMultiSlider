@@ -81,6 +81,13 @@ class MultiSlider{
         this.connector = document.createElement('span');
         this.connector.classList.add('connector');
         this.slider.appendChild(this.connector);
+
+        this.min_max_input = document.createElement('input');
+        this.min_max_input.classList.add('min-max');
+        this.min_max_input.setAttribute('hidden', true);
+        this.min_max_input.id = this.container_id + "-min-max";
+        this.min_max_input.setAttribute('value', this.value1 + "-" + this.value2);
+        this.slider.appendChild(this.min_max_input);
     }
 
     /**
@@ -262,6 +269,8 @@ class MultiSlider{
 
         this.container.setAttribute('min', Math.min(this.value1, this.value2));
         this.container.setAttribute('max', Math.max(this.value1, this.value2));
+
+        this.min_max_input.setAttribute('value', this.container.getAttribute('min') + '-' + this.container.getAttribute('max'));
     }
 
     /**

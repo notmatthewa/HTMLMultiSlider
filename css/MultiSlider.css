@@ -67,6 +67,7 @@
     cursor: grab;
     z-index: 5;
     border-radius: 50%;
+    border: none;
 }
 .time-picker-container .slider .handle1{
     left: -10px;
